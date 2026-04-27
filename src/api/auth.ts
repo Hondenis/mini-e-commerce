@@ -1,7 +1,7 @@
 import { api } from "./client";
 import type { ApiUser } from "@/types";
 
-export const userApi = {
+export const usersApi = {
     list: () => api.get<ApiUser[]>("/users"),
     get: (id: number) => api.get<ApiUser>(`/users/${id}`),
 }
