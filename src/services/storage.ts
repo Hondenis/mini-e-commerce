@@ -4,6 +4,7 @@
  */
 
 const PREFIX = 'atelier:v1:'
+const PREFIX = 'hs-store:v1:'
 
 export function storageKey(name: string) {
   return `${PREFIX}${name}`

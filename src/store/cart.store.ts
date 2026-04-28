@@ -21,10 +21,15 @@ export const useCartStore = create<CartState>()(
       lines: [],
       setOwner(ownerId) {
         const current = get().ownerId
-        if (current !== ownerId) {
-          // Clear cart when owner changes (login/logout/different user)
-          set({ ownerId, lines: [] })
+        if (current === ownerId) return
+        // Visitante (null) -> usuário autenticado: preserva o carrinho montado
+        // como guest para que ele continue de onde parou após o login.
+        if (current === null && ownerId !== null) {
+          set({ ownerId })
+          return
         }
+        // Logout, ou troca entre usuários distintos: zera o carrinho.
+        set({ ownerId, lines: [] })
       },
       add(product, qty = 1) {
         const lines = [...get().lines]
@@ -66,6 +71,7 @@ export const useCartStore = create<CartState>()(
     }),
     {
       name: 'atelier:v1:cart',
+      name: 'hs-store:v1:cart',
       storage: createJSONStorage(() => localStorage),
       partialize: (s) => ({ ownerId: s.ownerId, lines: s.lines }),
     },

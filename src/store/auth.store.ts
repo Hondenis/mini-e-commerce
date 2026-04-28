@@ -44,6 +44,7 @@ export const useAuthStore = create<AuthState>()(
     }),
     {
       name: 'atelier:v1:auth',
+      name: 'hs-store:v1:auth',
       storage: createJSONStorage(() => localStorage),
       partialize: (state) => ({ user: state.user, token: state.token, status: state.status }),
     },

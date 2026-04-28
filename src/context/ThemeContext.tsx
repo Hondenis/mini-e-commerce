@@ -9,7 +9,7 @@ interface ThemeContextValue {
 }
 
 const ThemeContext = createContext<ThemeContextValue | null>(null)
-const STORAGE_KEY = 'atelier:theme'
+const STORAGE_KEY = 'hs-store:theme'
 
 function readInitial(): Theme {
   if (typeof document === 'undefined') return 'light'
