@@ -62,7 +62,7 @@ export function LoginPage() {
         <div className="absolute top-32 right-16 size-44 rounded-full border border-[var(--color-cream-50)]/10" />
         <div className="relative z-10 flex flex-col justify-between p-12 xl:p-16 w-full">
           <div className="flex items-end gap-2">
-            <p className="font-display text-4xl">HS — Store</p>
+            <p className="font-display text-4xl text-[var(--color-cream-50)]">HS — Store</p>
             <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-[var(--color-cream-300)] mb-1.5">
               ’26
             </p>
@@ -71,8 +71,8 @@ export function LoginPage() {
             <p className="text-[10px] tracking-[0.4em] uppercase text-[var(--color-cream-300)]">
               Edição · Vol. 04
             </p>
-            <h1 className="font-display text-5xl xl:text-6xl leading-[1.05]">
-              Bem vindos há{' '}
+            <h1 className="font-display text-5xl xl:text-6xl leading-[1.05] text-[var(--color-cream-50)]">
+              Bem vindos à{' '}
               <em className="font-light italic text-[var(--color-amber-500)]">HS-Store</em>.
             </h1>
             <p className="text-sm text-[var(--color-cream-300)] leading-relaxed">

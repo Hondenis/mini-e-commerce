@@ -5,11 +5,11 @@ export function Footer() {
         <div>
           <p className="font-display text-3xl leading-none">HS-Store</p>
           <p className="mt-2 text-xs text-[var(--color-fg-muted)] max-w-xs">
-            Curadoria digital. Peças únicas. Edição limitada de primavera de 2026.
+            Compras digital. Peças únicas. Edição limitada de primavera de 2026.
           </p>
         </div>
         <ul className="grid grid-cols-2 gap-2 text-xs tracking-[0.22em] uppercase text-[var(--color-fg-muted)]">
-          <li>Curadoria</li>
+          <li>Compras</li>
           <li>Catálogo</li>
           <li>Atendimento</li>
           <li>Imprensa</li>

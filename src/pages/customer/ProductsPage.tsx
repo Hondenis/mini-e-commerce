@@ -47,8 +47,7 @@ export function ProductsPage() {
           </h1>
         </div>
         <p className="md:col-span-4 md:col-start-9 text-sm text-[var(--color-fg-muted)] leading-relaxed max-w-sm">
-          Uma seleção curada de peças retiradas do gabinete digital. Tipografia, materiais
-          e proporções que sustentam o presente — sem pressa, sem ruído.
+          A melhor variedade de produtos do mercado você só encontra aqui. Explore nosso catálogo e descubra peças únicas para complementar seu estilo. Compre com segurança e rapidez, e receba tudo no conforto da sua casa.
         </p>
       </section>
 

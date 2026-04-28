@@ -12,7 +12,7 @@ export function CheckoutSuccessPage() {
         Pedido confirmado
       </p>
       <h1 className="font-display text-5xl md:text-7xl leading-[1.05] max-w-2xl">
-        Obrigado. Sua curadoria está
+        Obrigado. Sua compra está
         <br />
         <em className="italic text-[var(--color-accent)]">a caminho</em>.
       </h1>
