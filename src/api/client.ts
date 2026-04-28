@@ -1,6 +1,6 @@
 import type { ApiErrorShape } from "@/types";
 
-const BASE_URL = "https://fakestoreapi.com";
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 const DEFAULT_TIMEOUT = 12_000;
 
 export class ApiError extends Error implements ApiErrorShape {
@@ -23,7 +23,7 @@ async function request<T>(path: string, opts: RequestOptions = {}): Promise<T> {
     const { body, timeout = DEFAULT_TIMEOUT, headers, ...rest } = opts;
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), timeout);
-
+    console.log("BASE_URL", BASE_URL)
     try {
         const res = await fetch(`${BASE_URL}${path}`, {
             ...rest,
