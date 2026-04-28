@@ -55,6 +55,7 @@ export function Navbar() {
             <Link
               to="/cart"
               aria-label={`Carrinho (${cartCount} ${cartCount === 1 ? 'item' : 'itens'})`}
+              title={`Carrinho (${cartCount} ${cartCount === 1 ? 'item' : 'itens'})`}
               className="relative inline-flex size-9 items-center justify-center rounded-full hairline hover:bg-[var(--color-bg-muted)] transition-colors"
             >
               <ShoppingBag size={16} />
@@ -78,6 +79,7 @@ export function Navbar() {
                   navigate('/', { replace: true })
                 }}
                 aria-label="Sair"
+                title="Sair"
                 className="ml-1 p-1.5 rounded-full hover:bg-[var(--color-bg-muted)] cursor-pointer"
               >
                 <LogOut size={14} />

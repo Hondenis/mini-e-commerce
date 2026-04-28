@@ -63,7 +63,7 @@ export function AdminProductsPage() {
                       <div className="size-12 shrink-0 bg-[var(--color-bg-muted)] hairline flex items-center justify-center">
                         <img
                           src={p.image}
-                          alt=""
+                          alt={p.title}
                           className="size-full object-contain p-1.5"
                         />
                       </div>

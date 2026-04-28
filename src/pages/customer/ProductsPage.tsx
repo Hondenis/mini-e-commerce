@@ -55,8 +55,8 @@ export function ProductsPage() {
       {/* Filters */}
       <section className="space-y-4">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-[var(--color-border)] pb-4">
-          <label className="flex items-center gap-3 flex-1 max-w-md border-b border-transparent">
-            <Search size={16} className="text-[var(--color-fg-muted)]" />
+          <label className="flex items-center gap-3 flex-1 max-w-md border-b border-transparent rounded-[2px] focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-[var(--color-accent)]">
+            <Search size={16} className="text-[var(--color-fg-muted)]" aria-hidden="true" />
             <input
               type="search"
               value={search}
@@ -119,10 +119,13 @@ function CategoryChip({
   onClick: () => void
   children: React.ReactNode
 }) {
+  const label = typeof children === 'string' ? children : undefined
   return (
     <button
       type="button"
       onClick={onClick}
+      aria-pressed={active}
+      aria-label={label ? `Filtrar por ${label}` : undefined}
       className={cn(
         'shrink-0 px-4 h-9 text-[0.7rem] tracking-[0.28em] uppercase transition-colors cursor-pointer',
         active

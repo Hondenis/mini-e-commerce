@@ -56,6 +56,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button
         'transition-[transform,background-color,color,box-shadow] duration-200 ease-out',
         'active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed disabled:active:scale-100',
         'rounded-[2px] cursor-pointer',
+        'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]',
         variants[variant],
         sizes[size],
         fullWidth && 'w-full',
