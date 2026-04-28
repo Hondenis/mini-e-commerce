@@ -4,6 +4,12 @@ Mini e-commerce em React + TypeScript que consome a [FakeStore API](https://fake
 
 ---
 
+## 🎨 Design do Projeto
+O layout deste projeto foi desenvolvido no Figma, seguindo uma estética premium/minimalista.
+- [Link para o protótipo no Figma](https://www.figma.com/design/OFK0IauKzmTHMELUPVlB0b/teste-frontend?node-id=0-1&t=UOhPKAPArzCJ5APs-1)
+
+---
+
 ## Funcionalidades
 
 **Autenticação** via FakeStore (`/auth/login`) com sessão persistida em `localStorage`.
