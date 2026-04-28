@@ -3,7 +3,6 @@
  * Keys are versioned so a future schema change can invalidate old data.
  */
 
-const PREFIX = 'atelier:v1:'
 const PREFIX = 'hs-store:v1:'
 
 export function storageKey(name: string) {

@@ -70,7 +70,6 @@ export const useCartStore = create<CartState>()(
       },
     }),
     {
-      name: 'atelier:v1:cart',
       name: 'hs-store:v1:cart',
       storage: createJSONStorage(() => localStorage),
       partialize: (s) => ({ ownerId: s.ownerId, lines: s.lines }),
